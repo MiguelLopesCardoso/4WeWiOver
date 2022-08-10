@@ -1,4 +1,5 @@
 {
+  "homepage":"http://MiguelLopesCardoso.github.io/4WeWiOver",
   "name": "toetsen",
   "version": "0.1.0",
   "private": true,
@@ -11,14 +12,19 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
+  }, 
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
